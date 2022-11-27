@@ -59,8 +59,8 @@
 
     <Button
         android:id="@+id/triggerNextDay"
-        android:layout_width="361dp"
-        android:layout_height="52dp"
+        android:layout_width="336dp"
+        android:layout_height="56dp"
         android:text="Jutro (xx.xx.xxxx)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,8 +83,8 @@
 
     <Button
         android:id="@+id/triggerToday"
-        android:layout_width="361dp"
-        android:layout_height="52dp"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
         android:text="Dziś (xx.xx.xxxx)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

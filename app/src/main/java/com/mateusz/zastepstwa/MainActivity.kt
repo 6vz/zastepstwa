@@ -7,11 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
+        // always force light mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val todayButton = findViewById<Button>(R.id.triggerToday)
@@ -44,14 +47,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DisplayToday::class.java)
             val month = java.time.LocalDate.now().monthValue
             val day = java.time.LocalDate.now().dayOfMonth
-            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month")
+            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
             startActivity(intent)
         }
         tomorrowButton.setOnClickListener {
             val intent = Intent(this, DisplayToday::class.java)
             val month = java.time.LocalDate.now().plusDays(1).monthValue
             val day = java.time.LocalDate.now().plusDays(1).dayOfMonth
-            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month")
+            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
             startActivity(intent)
         }
     }
