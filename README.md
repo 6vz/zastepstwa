@@ -11,7 +11,7 @@ Prosta aplikacja do sprawdzania zastępstw w ZSCHiE
 - Zastępstwa te są brane w sposób legalny, jedyne co robiąc to omijając politykę CORS, poprzez pobranie pliku, i wgranie na serwer lokalny, w celach archiwizacyjnych PDFy te będą przechowywane do momentu kiedy będą zajmowały powyżej 5GB. Jeśli inny podmiot ma zastrzeżenia do działania prosimy o natychmiastowy kontakt z developerem przy pomocy komunikatora Matrix `@6vz:matrix.org`
 
 ## Zasoby użyte
-- PDF Express ([pdf.express](https://pdf.express))
+- PDF Express ([pdfjs.express](https://pdfjs.express/))
 - Express ([expressjs.com](https://expressjs.com/))
 - Kotlin & Android Studio ([developer.android.com](https://developer.android.com))
 
