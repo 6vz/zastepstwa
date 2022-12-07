@@ -20,11 +20,12 @@ class MainActivity : AppCompatActivity() {
         val todayButton = findViewById<Button>(R.id.triggerToday)
         val tomorrowButton = findViewById<Button>(R.id.triggerNextDay)
         if (java.time.LocalDate.now().dayOfWeek.value > 5) {
-            val day_e = java.time.LocalDate.now().dayOfMonth
-            val month_e = java.time.LocalDate.now().monthValue
-            val year_e = java.time.LocalDate.now().year
-            todayButton.isEnabled = false
-            todayButton.text = "Dzień poza planem ($day_e.$month_e.$year_e)"
+            // find nearest monday, and set date to it
+//            val day_e = java.time.LocalDate.now().dayOfMonth
+//            val month_e = java.time.LocalDate.now().monthValue
+//            val year_e = java.time.LocalDate.now().year
+//            todayButton.isEnabled = false
+//            todayButton.text = "Dzień poza planem ($day_e.$month_e.$year_e)"
         } else {
             val day_e = java.time.LocalDate.now().dayOfMonth
             val month_e = java.time.LocalDate.now().monthValue
@@ -47,14 +48,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DisplayToday::class.java)
             val month = java.time.LocalDate.now().monthValue
             val day = java.time.LocalDate.now().dayOfMonth
-            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+            if (day.toString().length == 1) {
+                println("Getting values for 0$day.$month")
+                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1")
+            } else {
+                println("Getting values for $day.$month")
+                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+            }
             startActivity(intent)
         }
         tomorrowButton.setOnClickListener {
             val intent = Intent(this, DisplayToday::class.java)
             val month = java.time.LocalDate.now().plusDays(1).monthValue
             val day = java.time.LocalDate.now().plusDays(1).dayOfMonth
-            intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+            if (day.toString().length == 1) {
+                println("Getting values for 0$day.$month")
+                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1")
+            } else {
+                println("Getting values for $day.$month")
+                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+            }
             startActivity(intent)
         }
     }

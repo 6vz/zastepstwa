@@ -8,14 +8,53 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="321dp"
-        android:layout_height="87dp"
+        android:layout_width="137dp"
+        android:layout_height="114dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/ll" />
+
+    <Button
+        android:id="@+id/triggerToday"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:text="Dziś (xx.xx.xxxx)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/triggerNextDay"
+        android:layout_width="336dp"
+        android:layout_height="56dp"
+        android:text="Jutro (xx.xx.xxxx)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="314dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="Kliknij na przycisk z odpowiednią datą i sprawdź zastępstwa na najbliższe dni"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,71 +64,39 @@
         android:scaleX="2"
         android:scaleY="2"
         android:text="Zastepstwa"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="312dp"
-        android:layout_height="71dp"
-        android:gravity="center"
-        android:text="Jeśli widzisz tekst &quot;Dzień poza planem&quot; oznacza to że ten dzień to Weekend lub Dzień Wolny. Jeśli strona się nie ładuje, to proszę napisz maila na info@6vz.dev"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.401" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="312dp"
+        android:layout_height="32dp"
         android:gravity="center"
-        android:text="©MHB (wspierane przez Moveit)"
+        android:text="Zespół Szkół Chłodniczych i Elektronicznych"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
-
-    <Button
-        android:id="@+id/triggerNextDay"
-        android:layout_width="336dp"
-        android:layout_height="56dp"
-        android:text="Jutro (xx.xx.xxxx)"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.447" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="6vz.dev"
+        android:gravity="left"
+        android:text="Wersja 1.1 &quot;Pingwin&quot;\n© Zastępstwa - by MB &amp; AK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
-
-    <Button
-        android:id="@+id/triggerToday"
-        android:layout_width="334dp"
-        android:layout_height="53dp"
-        android:text="Dziś (xx.xx.xxxx)"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
