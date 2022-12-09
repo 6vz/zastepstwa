@@ -1,6 +1,11 @@
 # Zastępstwa
 Prosta aplikacja do sprawdzania zastępstw w ZSCHiE
 
+## Poradnik Video
+- [Jak zainstalować aplikację na swoim telefonie](https://cdn.6vz.dev/zastepstwa.mp4)
+- [Jak skompilować aplikację u siebie](https://www.youtube.com/watch?v=avftrygdDRM)
+- [Jak pobierać zastępstwa na własną rękę, i samemu generować je](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 ## Jak skompilować
 1. Otwórz najnowszą wersję Android Studio
 2. Znajdź zakładkę `Build`
