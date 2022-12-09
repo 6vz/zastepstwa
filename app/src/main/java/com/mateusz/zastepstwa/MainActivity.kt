@@ -20,12 +20,11 @@ class MainActivity : AppCompatActivity() {
         val todayButton = findViewById<Button>(R.id.triggerToday)
         val tomorrowButton = findViewById<Button>(R.id.triggerNextDay)
         if (java.time.LocalDate.now().dayOfWeek.value > 5) {
-            // find nearest monday, and set date to it
-//            val day_e = java.time.LocalDate.now().dayOfMonth
-//            val month_e = java.time.LocalDate.now().monthValue
-//            val year_e = java.time.LocalDate.now().year
-//            todayButton.isEnabled = false
-//            todayButton.text = "Dzień poza planem ($day_e.$month_e.$year_e)"
+           val day_e = java.time.LocalDate.now().dayOfMonth
+           val month_e = java.time.LocalDate.now().monthValue
+            val year_e = java.time.LocalDate.now().year
+           todayButton.isEnabled = false
+            todayButton.text = "Dzień poza planem ($day_e.$month_e.$year_e)"
         } else {
             val day_e = java.time.LocalDate.now().dayOfMonth
             val month_e = java.time.LocalDate.now().monthValue
