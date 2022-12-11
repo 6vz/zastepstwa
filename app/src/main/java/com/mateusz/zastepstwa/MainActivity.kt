@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
         val todayButton = findViewById<Button>(R.id.triggerToday)
         val tomorrowButton = findViewById<Button>(R.id.triggerNextDay)
         if (java.time.LocalDate.now().dayOfWeek.value > 5) {
-           val dayToday = java.time.LocalDate.now().dayOfMonth
-           val monthToday = java.time.LocalDate.now().monthValue
+            val dayToday = java.time.LocalDate.now().dayOfMonth
+            val monthToday = java.time.LocalDate.now().monthValue
             val yearToday = java.time.LocalDate.now().year
-           todayButton.isEnabled = false
+            todayButton.isEnabled = false
             todayButton.text = "Dzień poza planem ($dayToday.$monthToday.$yearToday)"
         } else {
             val dayToday = java.time.LocalDate.now().dayOfMonth
@@ -49,10 +49,16 @@ class MainActivity : AppCompatActivity() {
             val day = java.time.LocalDate.now().dayOfMonth
             if (day.toString().length == 1) {
                 println("Getting values for 0$day.$month")
-                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1")
+                intent.putExtra(
+                    "pdf_url",
+                    "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1"
+                )
             } else {
                 println("Getting values for $day.$month")
-                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+                intent.putExtra(
+                    "pdf_url",
+                    "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1"
+                )
             }
             startActivity(intent)
         }
@@ -62,10 +68,16 @@ class MainActivity : AppCompatActivity() {
             val day = java.time.LocalDate.now().plusDays(1).dayOfMonth
             if (day.toString().length == 1) {
                 println("Getting values for 0$day.$month")
-                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1")
+                intent.putExtra(
+                    "pdf_url",
+                    "https://zst.6vz.dev/get?day=0$day&month=$month&nocache=1"
+                )
             } else {
                 println("Getting values for $day.$month")
-                intent.putExtra("pdf_url", "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1")
+                intent.putExtra(
+                    "pdf_url",
+                    "https://zst.6vz.dev/get?day=$day&month=$month&nocache=1"
+                )
             }
             startActivity(intent)
         }
