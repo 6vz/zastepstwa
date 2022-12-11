@@ -10,11 +10,11 @@
         android:id="@+id/imageView"
         android:layout_width="137dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
+        app:layout_constraintVertical_bias="0.869"
         app:srcCompat="@drawable/ll" />
 
     <Button
@@ -22,12 +22,12 @@
         android:layout_width="334dp"
         android:layout_height="53dp"
         android:text="Dziś (xx.xx.xxxx)"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/triggerNextDay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/triggerNextDay"
@@ -58,12 +58,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="152dp"
+        android:layout_height="29dp"
         android:gravity="center"
         android:scaleX="2"
         android:scaleY="2"
         android:text="Zastepstwa"
+        android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
