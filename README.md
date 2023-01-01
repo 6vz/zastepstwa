@@ -1,5 +1,5 @@
 # Zastępstwa (stara wersja)
-**ZOBACZ NOWSZA WERSJE NA [zastepstwa-rewrite](https://github.com/6vz/zastepstwa-rewrite)
+**ZOBACZ NOWSZA WERSJE NA [zastepstwa-rewrite](https://github.com/6vz/zastepstwa-rewrite)**<br>
 Prosta aplikacja do sprawdzania zastępstw w ZSCHiE
 
 ## Poradnik Video
